@@ -1,0 +1,29 @@
+{
+ "Rules": [
+   {
+      "ID": "ErrorRule",
+      "Prefix": "Error*",
+      "Status": "Enabled",
+      "NoncurrentVersionTransition": {
+         "NoncurrentDays": 30,
+         "StorageClass": "STANDARD_IA"
+      },
+      "NoncurrentVersionExpiration": {
+         "NoncurrentDays": 37
+      }
+   },
+   {
+      "ID": "ZabbixRule",
+      "Prefix": "zabbix*",
+      "Status": "Enabled",
+      "NoncurrentVersionTransition": {
+         "NoncurrentDays": 30,
+         "StorageClass": "STANDARD_IA"
+      },
+      "NoncurrentVersionExpiration": {
+         "NoncurrentDays": 37
+      }
+   }
+ ]
+
+}
